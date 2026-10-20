@@ -1,0 +1,52 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "Feature: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Cost-first thinking.** If your feature idea involves API calls,
+        describe how it could be optimized (routing, caching, filtering).
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Search existing issues
+      description: Before opening a new issue, please search for similar requests
+      options:
+        - label: I searched existing issues and this hasn't been reported yet
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem does this solve? Why is it needed?
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How could this work? Include code sketches or examples.
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which part of the tool stack does this affect?
+      options:
+        - Cost Control (LiteLLM, budgets)
+        - Routing (RouteLLM, Semantic Router)
+        - Caching (GPTCache, requests-cache)
+        - Input Optimization (Crawl4AI, Firecrawl, Chonkie)
+        - Retrieval & Context (Mem0, Graphiti)
+        - Workflow Management (Prefect, Celery, PyBreaker)
+        - Templates & Examples
+        - Documentation
+        - Other
+  - type: dropdown
+    id: effort
+    attributes:
+      label: Estimated effort
+      description: How big is this change?
+      options:
+        - Small (template tweak, doc fix)
+        - Medium (new tool integration, example bot)
+        - Large (architecture change, new module)

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup Help & Questions
+    url: https://github.com/mnemnon-ai/ai-automation-runbook/discussions
+    about: For general questions or setup help, please use GitHub Discussions instead of opening an issue.
+  - name: Security Vulnerability Reporting
+    url: https://github.com/mnemnon-ai/ai-automation-runbook/security/advisories/new
+    about: Please report security vulnerabilities privately using GitHub Security Advisories.
